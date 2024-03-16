@@ -1,23 +1,23 @@
 #include <iostream>
-#include <cstring>
 
-void reverseString(char* str) {
-    int length = std::strlen(str);
-    for (int i = 0; i < length / 2; ++i) {
-        char temp = str[i];
-        str[i] = str[length - i - 1];
-        str[length - i - 1] = temp;
+void fibonacciSequence(int n) {
+    int a = 0, b = 1;
+    while (a <= n) {
+        std::cout << a;
+        if (a + b <= n) {
+            std::cout << " ";
+        }
+        int sum = a + b;
+        a = b;
+        b = sum;
     }
 }
 
 int main() {
-    const int maxLength = 100; // Maximum length of input string
-    char str[maxLength];
+    int n;
+    std::cin >> n;
 
-    std::cin.getline(str, maxLength); // Read input from user
+    fibonacciSequence(n);
 
-    reverseString(str);
-
-    std::cout << str << std::endl; // Output the reversed string
     return 0;
 }

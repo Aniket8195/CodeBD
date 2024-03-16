@@ -7,8 +7,8 @@ const otpTemplate = (otp) => {
           <title>OTP Verification Email</title>
           <style>
               body {
-                  background-color: #ffffff;
-                  font-family: Arial, sans-serif;
+                  background-color: #f4f4f4;
+                  font-family: 'Courier New', monospace;
                   font-size: 16px;
                   line-height: 1.4;
                   color: #333333;
@@ -21,6 +21,9 @@ const otpTemplate = (otp) => {
                   margin: 0 auto;
                   padding: 20px;
                   text-align: center;
+                  background-color: #fff;
+                  border-radius: 5px;
+                  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
               }
       
               .logo {
@@ -32,6 +35,7 @@ const otpTemplate = (otp) => {
                   font-size: 18px;
                   font-weight: bold;
                   margin-bottom: 20px;
+                  color: #1a73e8;
               }
       
               .body {
@@ -42,8 +46,8 @@ const otpTemplate = (otp) => {
               .cta {
                   display: inline-block;
                   padding: 10px 20px;
-                  background-color: #FFD60A;
-                  color: #000000;
+                  background-color: #1a73e8;
+                  color: #ffffff;
                   text-decoration: none;
                   border-radius: 5px;
                   font-size: 16px;
@@ -59,6 +63,7 @@ const otpTemplate = (otp) => {
       
               .highlight {
                   font-weight: bold;
+                  color: #1a73e8;
               }
           </style>
       
@@ -66,23 +71,21 @@ const otpTemplate = (otp) => {
       
       <body>
           <div class="container">
-              <a href="https://studynotion-edtech-project.vercel.app"><img class="logo"
-                      src="https://i.ibb.co/7Xyj3PC/logo.png" alt="StudyNotion Logo"></a>
+              <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.svgrepo.com%2Fsvg%2F504224%2Fcode-editor&psig=AOvVaw3b-5x_ih4yxpskXooMz2nJ&ust=1710694307435000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCOC074Sf-YQDFQAAAAAdAAAAABAE"></a>
               <div class="message">OTP Verification Email</div>
               <div class="body">
                   <p>Dear User,</p>
-                  <p>Thank you for registering with StudyNotion. To complete your registration, please use the following OTP
+                  <p>Thank you for registering with CodeSchool. To complete your registration, please use the following OTP
                       (One-Time Password) to verify your account:</p>
                   <h2 class="highlight">${otp}</h2>
                   <p>This OTP is valid for 5 minutes. If you did not request this verification, please disregard this email.
                   Once your account is verified, you will have access to our platform and its features.</p>
               </div>
               <div class="support">If you have any questions or need assistance, please feel free to reach out to us at <a
-                      href="mailto:info@studynotion.com">info@studynotion.com</a>. We are here to help!</div>
+                      href="mailto:info@codeschool.com">info@codeschool.com</a>. We are here to help!</div>
           </div>
       </body>
       
       </html>`;
-  };
-  module.exports = otpTemplate;
-  
+};
+module.exports = otpTemplate;

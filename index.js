@@ -12,7 +12,7 @@ const authRouter = require("./routes/AuthRoute");
 const problemRoute = require("./routes/ProblemRoute");
 const playgroundRoute = require("./routes/Playground");
 dotenv.config();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;  
 
 database.connect();
 app.use(express.json());
