@@ -1,14 +1,1 @@
-{
-    "builds": [
-      {
-        "src": "api/*",
-        "use": "@vercel/node"
-      }
-    ],
-    "functions": {
-      "api/*": {
-        "runtime": "@vercel/node"
-      }
-    }
-  }
-  
+{ "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
