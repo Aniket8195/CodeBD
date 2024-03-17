@@ -1,6 +1,10 @@
+
 const express = require("express");
 const app = express();
 const http = require("http").Server(app);
+
+
+
 
 const database = require("./config/database");
 const cookieParser = require("cookie-parser");
@@ -34,3 +38,4 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`App is running at ${PORT}`);
 });
+module.exports = app;
